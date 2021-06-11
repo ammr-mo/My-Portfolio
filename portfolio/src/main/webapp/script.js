@@ -13,16 +13,16 @@
 // limitations under the License.
 
 /**
- * Adds a random greeting to the page.
+ * Adds a random poem to the page.
  */
-function addRandomGreeting() {
-  const greetings =
+function addRandomPoem() {
+  const poems =
       ['"America" by Javon Johnson, Natasha Hooper, and Rudy Francisco', '"Sandlot" by Amen Ra and Rudy Francisco', '"Sons" by Terisa Siagatonu and Rudy Francisco', '"Dear White People" by FreeQuency','"See Something, Say Something" by Usama Minhas'];
 
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+  // Pick a random poem.
+  const poem = poems[Math.floor(Math.random() * poems.length)];
 
   // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
+  const poemContainer = document.getElementById('poem-container');
+  poemContainer.innerText = poem;
 }
