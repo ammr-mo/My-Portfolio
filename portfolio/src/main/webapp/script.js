@@ -26,3 +26,11 @@ function addRandomPoem() {
   const poemContainer = document.getElementById('poem-container');
   poemContainer.innerText = poem;
 }
+
+async function showInterest() {
+    const responseFromServer = await fetch('/interests');
+    const textFromResponse = await responseFromServer.text();
+
+    const interestContainer = document.getElementById('interest-container');
+    interestContainer.innerText = textFromResponse;
+}
