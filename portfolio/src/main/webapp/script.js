@@ -27,7 +27,7 @@ function addRandomPoem() {
   poemContainer.innerText = poem;
 }
 
-async function showInterest(){
+async function showInterest() {
     const responseFromServer = await fetch('/interests');
     const textFromResponse = await responseFromServer.text();
 
