@@ -16,7 +16,7 @@
 
     <!-- Project-specific properties -->
     <exec.mainClass>com.google.sps.ServerMain</exec.mainClass>
-    <googleCloudProjectId>YOUR_PROJECT_ID_HERE</googleCloudProjectId>
+    <googleCloudProjectId>amohamed-sps-summer21</googleCloudProjectId>
   </properties>
 
   <dependencies>
@@ -39,11 +39,13 @@
       <version>${jetty.version}</version>
     </dependency>
 
+    <!-- Gson -->
     <dependency>
         <groupId>com.google.code.gson</groupId>
         <artifactId>gson</artifactId>
         <version>2.8.6</version>
     </dependency>
+
   </dependencies>
 
   <build>

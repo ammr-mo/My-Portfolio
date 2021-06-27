@@ -29,8 +29,10 @@ function addRandomPoem() {
 
 async function showInterest() {
     const responseFromServer = await fetch('/interests');
-    const textFromResponse = await responseFromServer.text();
+    const textFromResponse = await responseFromServer.json();
+
+    const interest = textFromResponse[Math.floor(Math.random()*textFromResponse.length)]
 
     const interestContainer = document.getElementById('interest-container');
-    interestContainer.innerText = textFromResponse;
+    interestContainer.innerText = interest;
 }

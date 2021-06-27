@@ -9,10 +9,9 @@
   <body>
     <div id="content">
       <h1>Ammran Mohamed's Portfolio</h1>
-      <p>This is my portfolio.</p>
       <img src="/images/selfie.jpg" width="300" height="400"/>
       <p> My name is Ammran Mohamed and I am a junior at Columbia University studying Computer Science. I am particularly interested in Artificial Intelligence and Machine Learning.</p>
-      <p> Click this button to learn more about what I am interested in! </p>
+      <p> Click this button to see a random fact about me! </p>
       <button onclick="showInterest()">Tell me more!</button>
       <div id="interest-container"></div>
       <p> I also really enjoy photography! I am no professional, but enjoy taking photos of my friends, and occasionally animals :) </p>
@@ -31,9 +30,32 @@
       <img src="images/azhar.jpg" width="300" height = "400"/>
       <img src="images/ayan.jpg" width="300" height = "400"/>
       <img src="images/samiya.jpg" width="300" height = "400"/>
-      <p>animals!</p>
-      <img src="images/butterfly.JPG" width="400" height = "300"/>
       <img src="images/goats.jpg" width="300" height = "400"/>
+      <img src="images/butterfly.JPG" width="300" height = "400"/>
     </div>
+    <form action="/form-handler"method="POST">
+        <h1>CONTACT</h1>
+
+        <label for="name">Full Name:</label>
+        <br/>
+        <input type="text" id="fullname" name="name"/>
+        <br/>
+
+        <label for="email">Your email:</label>
+        <br/>
+        <input type="text" id="youremail" name="email"/>
+        <br/>
+
+        <label for="subject">Subject:</label>
+        <br/>
+        <input type="text" id="thesubject" name="subject"/>
+        <br/>
+
+        <p>Message:</p>
+        <textarea name="text-input"></textarea>
+        <br/>
+        
+        <input type="submit" />
+    </form>
   </body>
 </html>
